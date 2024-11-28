@@ -12,8 +12,13 @@ h1 {
   color: goldenrod;
 }
 
-#message-el {
+#display-msg {
   font-style: italic;
+}
+
+#message-el {
+  font-weight: bolder;
+  font-size: large;
 }
 
 button {
@@ -25,4 +30,6 @@ button {
   padding: 5px 0;
   font-weight: bold;
   border: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
