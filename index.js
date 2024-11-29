@@ -4,6 +4,7 @@ let cardsEl = document.getElementById("cards-el")
 
 let firstCard = 10
 let secondCard =4
+let cards =[firstCard, secondCard]  //array created to display the cards
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
@@ -17,7 +18,7 @@ function startGame(){
 
 function renderGame(){
     sumEl.textContent = "Sum : " + sum
-    cardsEl.textContent = "Cards : " + firstCard + " " + secondCard
+    cardsEl.textContent = "Cards : " + cards[0] + " " + cards[1]    //array used to display the cards 
 
     if (sum <= 20) {
     message = "Do you want to draw a new card?"
@@ -35,5 +36,7 @@ messageEl.textContent=message
 function newCard(){
      let card = 7
      sum += card
+     cards.push(card)       // Push feathure used to push new (third card) card to the "cardsEl.textContent" to display in the game. 
+    //  console.log(cards)
      renderGame()
 }
