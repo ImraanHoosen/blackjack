@@ -10,9 +10,14 @@ body {
   align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
     sans-serif;
+
+  background-color: #070707; /* Placeholder background color */
+  background-image: url("placeholder-image.jpg"); /* Low-resolution version of the image */
   background-image: url("images/bg2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+
   font-weight: bold;
   color: white;
   text-align: center;
@@ -20,6 +25,10 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+body.loading {
+  background-image: url("placeholder-image.jpg"); /* Only show placeholder image until full image is loaded */
 }
 
 h1 {
