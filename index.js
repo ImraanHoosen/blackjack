@@ -21,7 +21,7 @@ function renderGame(){
     sumEl.textContent = "Sum : " + sum
     cardsEl.textContent = "Cards : "    
     for (let i = 0; i < cards.length; i++) {        //array used to display the cards 
-        cardsEl.textContent += cards[i] + " "
+    cardsEl.textContent += cards[i] + " "
     }
 
 
