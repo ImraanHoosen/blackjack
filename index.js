@@ -43,7 +43,6 @@ function renderGame() {
 }
 
 
-
 /**
  * Handles the logic for drawing a new card.
  */
