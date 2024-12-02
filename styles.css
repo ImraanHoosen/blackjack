@@ -2,6 +2,19 @@
   padding-top: 15px;
   box-sizing: border-box;
 }
+body {
+  background-image: url("images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+preload {
+  background-image: url("images/bg2.jpg");
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 
 body {
   display: flex;
@@ -10,7 +23,7 @@ body {
   align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
     sans-serif;
-  background-image: url("images/bg2.jpg");
+  /* background-image: url("images/bg2.jpg"); */
   background-size: cover;
   background-position: center;
   font-weight: bold;
