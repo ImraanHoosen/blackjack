@@ -1,11 +1,14 @@
+// Select the HTML elements for the message, sum, and cards
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
-
+// Generate two random cards and store them in an array
 let firstCard = getRandomCard()
 let secondCard =getRandomCard()
 let cards =[firstCard, secondCard]  //array created to display the cards
+// Calculate the total sum of the cards
 let sum = firstCard + secondCard
+// Initialize the game state variables
 let hasBlackJack = false
 let isAlive = true
 let message = ""
@@ -50,6 +53,7 @@ function startGame() {
  * Renders the game based on the current game state.
  */
 function renderGame() {
+
     sumEl.textContent = "Sum : " + sum
     cardsEl.textContent = "Cards : "    
     for (let i = 0; i < cards.length; i++) {        //array used to display the cards 
