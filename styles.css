@@ -63,3 +63,30 @@ button {
   color: #fff; /* Text color */
   box-shadow: 3px 3px 5px black;
 }
+
+/*
+ * This file contains the CSS styles for the Blackjack game's UI.
+ *
+ * The general layout is a flexbox container with a centered content area.
+ * The content area is a div with the id "container" and is styled with the
+ * following properties:
+ * - padding: 15px on the sides, 30px on the top and bottom
+ * - max-width: 80% of the parent container
+ * - margin: 30px on the top and bottom, auto on the sides (so it will be centered)
+ * - background: a semi-transparent black color with a blur effect
+ * - border: a 2px solid black border with a 10px radius
+ * - box-shadow: a 3px 3px 5px black shadow
+ *
+ * The text inside the container is white with a bold font and text-shadow.
+ *
+ * The buttons are styled with the following properties:
+ * - color: black
+ * - background: goldenrod
+ * - width: 150px
+ * - border-radius: 2px
+ * - padding: 5px on the sides, 5px on the top and bottom
+ * - font-weight: bold
+ * - border: none
+ * - margin: 2px on the top and bottom
+ * - box-shadow: 3px 3px 5px black
+ */
