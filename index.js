@@ -1,8 +1,13 @@
+// Create a player object with a name and chips
+let player = {
+  name: "Imraan",
+  chips: 300,
+};
 // Get references to the HTML elements that will display the game state
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
-
+let playerEl = document.getElementById("player-el");
 // Initialize an array to store the cards
 let cards = [];
 
@@ -103,3 +108,6 @@ function newCard() {
     renderGame(); // Re-render the game based on the updated game state
   }
 }
+
+// Render the player's name and chips on the page
+playerEl.textContent = player.name + ": $" + player.chips;
