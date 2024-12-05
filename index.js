@@ -83,11 +83,13 @@ function renderGame() {
     player.chips -= 50;
   }
 
+  // Check if player is out of chips
   if (player.chips <= 0) {
     playerEl.textContent = player.name + ": $" + 0;
     message = "You're out of chips!";
     isAlive = false;
   }
+
   messageEl.textContent = message;
   // Render player's name and chips
   playerEl.textContent = player.name + ": $" + player.chips;
