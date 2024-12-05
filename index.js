@@ -92,6 +92,9 @@ function renderGame() {
     isAlive = false;
   }
   messageEl.textContent = message;
+
+  // Render the player's name and chips on the page
+  playerEl.textContent = player.name + ": $" + player.chips;
 }
 
 /**
@@ -108,6 +111,3 @@ function newCard() {
     renderGame(); // Re-render the game based on the updated game state
   }
 }
-
-// Render the player's name and chips on the page
-playerEl.textContent = player.name + ": $" + player.chips;
