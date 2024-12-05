@@ -70,23 +70,29 @@ function renderGame() {
     cardsEl.textContent += cards[i] + " ";
   }
 
-  // Check if player has blackjack or has gone over
-  if (sum <= 20) {
+  // Determine game outcome based on sum of cards
+  if (sum < 21) {
+    // Offer player to draw a new card
     message = "Do you want to draw a new card?";
   } else if (sum === 21) {
+    // Player hits Blackjack
     message = "You've got Blackjack!";
     hasBlackJack = true;
-    player.chips += 50;
+    player.chips += 50; // Award chips for Blackjack
   } else {
+    // Player goes bust
     message = "You're out of the game!";
     isAlive = false;
-    player.chips -= 50;
+    player.chips -= 50; // Deduct chips for bust
   }
 
-  // Check if player is out of chips
+  // Check if player has run out of chips
   if (player.chips <= 0) {
+    // Update player's display to show zero chips
     playerEl.textContent = player.name + ": $" + 0;
-    message = "You're out of chips!";
+    // Set the game message to inform player they are out of chips
+    message = "You're out of chips! Game Over";
+    // Set game state to not alive, indicating game over
     isAlive = false;
   }
 
